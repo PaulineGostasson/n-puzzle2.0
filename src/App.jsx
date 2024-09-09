@@ -1,7 +1,7 @@
 // App.js
 import React, { useState } from 'react';
 import './App.css';
-import WelcomeScreen from './components/welcomescreen/welcomescreen';
+import WelcomeScreen from './components/WelcomeScreen/welcomeScreen';
 
 
 function App() {
