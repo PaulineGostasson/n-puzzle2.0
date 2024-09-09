@@ -1,0 +1,57 @@
+.FillTile, .EmptyTile {
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    z-index: 10;
+    transition: transform 0.3s ease 0s;
+    animation-duration: 0.75s;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.FillTile {
+    background: rgb(211, 163, 199);
+}
+
+.EmptyTile {
+    display: none; 
+}
+
+.CorrectPosition {
+    background-color: #4CAF50; 
+  }
+
+  /*  (mobiltelefoner) */
+
+@media (max-width: 600px) {
+    .FillTile, .EmptyTile {
+        width: 80px;
+        height: 80px;
+        font-size: 50px; 
+    }
+}
+
+/*  (surfplattor) */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .FillTile, .EmptyTile {
+        width: 90px;
+        height: 90px;
+        font-size: 60px; 
+    }
+}
+
+/* (Större skärmar) */
+
+@media (min-width: 901px) {
+    .FillTile, .EmptyTile {
+        width: 107px; 
+        height: 107px;
+        font-size: 75px;
+    }
+}

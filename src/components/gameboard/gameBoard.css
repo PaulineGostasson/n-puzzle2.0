@@ -1,0 +1,92 @@
+.Container {
+    margin: 5px;
+        display: grid;
+        position: relative;
+        padding: 15px;
+        cursor: default;
+        touch-action: none;
+        background: rgb(62, 51, 80);
+        border-radius: 12px;
+        width: 100%; 
+        max-width: 500px;
+        height: auto; 
+        grid-template-columns: repeat(auto-fill, minmax(106.25px, 1fr)); 
+        gap: 15px; 
+    }
+    
+    .Container-Sub {
+        width: 100%; 
+        height: 106.25px;
+        border-radius: 10px;
+    
+    }
+    
+    .ShuffleButton, .SolveButton {
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+      }
+    
+      .SolveButton {
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #28a745; 
+        color: white;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        margin-bottom: 30px;
+      }
+      
+      
+    
+      .MoveCounter {
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.2em;
+        margin-top: 30px;
+      }
+      
+      
+    /*  (mobiltelefoner) */
+    @media (max-width: 600px) {
+        .Container {
+            padding: 10px;
+            gap: 10px;
+        }
+    
+        .Container-Sub {
+            height: 80px; 
+        }
+    }
+    
+    /*  (surfplattor) */
+    @media (min-width: 601px) and (max-width: 900px) {
+        .Container {
+            padding: 12px;
+            gap: 12px;
+        }
+    
+        .Container-Sub {
+            height: 90px; 
+        }
+    }
+    
+    /* (Större skärmar) */
+    @media (min-width: 901px) {
+        .Container {
+            padding: 15px;
+            gap: 15px;
+        }
+    }

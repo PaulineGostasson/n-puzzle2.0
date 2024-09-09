@@ -1,0 +1,58 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.start-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.start-screen button {
+  background-color: rgb(211, 163, 199); 
+  color: #fff; 
+  padding: 15px 30px;
+  font-family: Arial, sans-serif; 
+  font-size: 24px; 
+  font-weight: bold;
+  border: none;
+  border-radius: 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.start-screen button:hover {
+  background-color: rgb(190, 142, 178); 
+  transform: scale(1.05); 
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+}
